@@ -5,7 +5,7 @@ def tripler(func):
 		''' Calls the function thrice.
 			Returns func's output thrice.
 		'''
-		print(func())
-		print(func())
-		print(func())
+		func()
+		func()
+		func()
 	return wrapper
