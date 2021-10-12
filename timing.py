@@ -9,5 +9,8 @@ def calculate_time(func):
 		'''
 		# by using the time.time(), I can get the current time in seconds.
 		X = time.time()
-		print(f'Total time {X}')
+		func()
+		Y = time.time()
+		Z = Y - X
+		print(f'Total time {Z}')
 	return wrapper
