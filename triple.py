@@ -1,7 +1,11 @@
 def tripler(func):
-	''' Takes in a function that will be used by the wrapper, calls the function thrice.
-                Returns func's output thrice.
+	''' Takes in a function that will be used by the wrapper.
 	'''
-	func()
-	func()
-	func()
+	def wrapper():
+		''' Calls the function thrice.
+			Returns func's output thrice.
+		'''
+		print(func())
+		print(func())
+		print(func())
+	return wrapper
